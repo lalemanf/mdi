@@ -31,7 +31,7 @@
     <h1 style="border: 0;">Bienvenid@s a mi página web</h1>
     <p>Ésto es un párrafo donde meto el <b>texto</b> que <i>yo quiera</i> mostrar en la página</p>
     <p>Pero <b><i>¿qué es HTML?</i></b></p>
-    <blockquote>HTML, siglas en inglés de <a href="https://es.wikipedia.org/wiki/HTML">HyperText Markup Language</a> (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.</blockquote>
+    <blockquote>HTML, siglas en inglés de <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HyperText Markup Language</a> (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.</blockquote>
 </div>
 
 <div style="display:block;page-break-before:always;"></div>
@@ -90,8 +90,9 @@ h1 {
 - **font-family** => Define el tipo de letra que se va a utilizar (verdana, arial, helvetica, san-serif...)
 - **border** => Pintamos un borde alrededor del elemento diciéndole qué grosor en píxeles y de qué color lo queremos (en inglés o hexadecimal)
 
-> Para más información acerca de las propiedades CSS más usadas podéis visitar [esta lista](https://www.eniun.com/resumen-tabla-propiedades-css-valores/) con ejemplos de código.
+> Para más información acerca de las propiedades CSS más usadas podéis visitar <a href="https://www.eniun.com/resumen-tabla-propiedades-css-valores/" target="_blank">esta lista</a> con ejemplos de código.
 
+<div style="display:block;page-break-before:always;"></div>
 
 # Actividades
 
