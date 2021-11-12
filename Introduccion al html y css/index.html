@@ -1,0 +1,465 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>1.Introducción al HTML y CSS - MDI Programación Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1introduccion-al-html-y-css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MDI Programación Web" class="md-header__button md-logo" aria-label="MDI Programación Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MDI Programación Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.Introducción al HTML y CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MDI Programación Web" class="md-nav__button md-logo" aria-label="MDI Programación Web" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    MDI Programación Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1.Introducción al HTML y CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        1.Introducción al HTML y CSS
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-html" class="md-nav__link">
+    Qué es HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-codigo" class="md-nav__link">
+    Ejemplo de código
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-html" class="md-nav__link">
+    Qué es HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-codigo" class="md-nav__link">
+    Ejemplo de código
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="1introduccion-al-html-y-css">1.Introducción al HTML y CSS</h1>
+<h2 id="que-es-html">Qué es HTML</h2>
+<ul>
+<li>Es un lenguaje de programación basado en etiquetas</li>
+<li>Se utiliza para elaborar páginas web</li>
+<li>El contenido se pone entre etiquetas como:<ul>
+<li>h1~h6 (para títulos)</li>
+<li>p (para párrafos)</li>
+<li>b o strong (para texto en negrita)</li>
+<li>i (para texto en cursiva)</li>
+<li>u (para texto subrayado)</li>
+<li>a (para poner un enlace a otro sitio o página web)</li>
+<li>blockquote (para citar texto entre comillas)</li>
+<li>img (para poner una imagen)</li>
+<li>table (para crear una tabla)</li>
+<li>ul (para crear una lista de elementos)</li>
+<li>ol (para crear una lista de elementos con número)</li>
+</ul>
+</li>
+</ul>
+<h2 id="ejemplo-de-codigo">Ejemplo de código</h2>
+<pre><code class="language-html">&lt;h1&gt;Bienvenid@s a mi página web&lt;/h1&gt;
+
+&lt;p&gt;Ésto es un párrafo donde meto el &lt;b&gt;texto&lt;/b&gt; que &lt;i&gt;yo quiera&lt;/i&gt; mostrar en la página&lt;/p&gt;
+
+&lt;p&gt;Pero &lt;b&gt;&lt;i&gt;¿qué es HTML?&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;HTML, siglas en inglés de 
+    &lt;a href=&quot;https://es.wikipedia.org/wiki/HTML&quot;&gt;HyperText Markup Language&lt;/a&gt; (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.&lt;/blockquote&gt;
+</code></pre>
+<div style="border: solid 1px; padding: 10px;margin: 20px 0;">
+    <h1 style="border: 0;">Bienvenid@s a mi página web</h1>
+    <p>Ésto es un párrafo donde meto el <b>texto</b> que <i>yo quiera</i> mostrar en la página</p>
+    <p>Pero <b><i>¿qué es HTML?</i></b></p>
+    <blockquote>HTML, siglas en inglés de <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HyperText Markup Language</a> (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.</blockquote>
+</div>
+
+<div style="display:block;page-break-before:always;"></div>
+
+<h1 id="que-es-css">Qué es CSS</h1>
+<ul>
+<li>Un lenguaje de diseño gráfico para dar formato a los documentos HTML</li>
+<li>Cascading Style Sheets (Hojas de Estilo en Cascada)</li>
+<li>Básico y muy usado en páginas web</li>
+<li>Puede venir declarado de 3 formas distintas:<ul>
+<li>dentro del atributo style de cualquier etiqueta HTML <code>&lt;h1 style="color: blue;"&gt;Título de color azul&lt;/h1&gt;</code></li>
+<li>entre <code>&lt;style&gt;&lt;/style&gt;</code> dentro del documento HTML</li>
+<li>en un archivo aparte que vinculamos dentro de <code>&lt;head&gt;&lt;/head&gt;</code> de esta manera <code>&lt;link rel="stylesheet" href="estilo.css"&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="estructura-del-codigo-css">Estructura del código CSS</h2>
+<p>El código CSS está formado por un conjunto de <strong>selectores</strong> que dentro tienen <strong>propiedades</strong> declarativas para establecer el formato a nuestro documento HTML.</p>
+<p>Existen 3 tipos de selectores:
+- Selector de etiqueta =&gt; Utiliza el mismo nombre que la etiqueta HTML</p>
+<pre><code class="language-css">h1 {
+    color: red;
+    font-size: 34px;
+    margin: 10px 5px 10px 5px;
+}
+</code></pre>
+<ul>
+<li>Selector de identificador =&gt; Utiliza el atributo <em>id</em> dentro de una etiqueta html, como por ejemplo <code>&lt;h1 id="titulo"&gt;Hola Mundo&lt;/h1&gt;</code>:</li>
+</ul>
+<pre><code class="language-css">#titulo {
+    color: red;
+    font-size: 34px;
+    margin: 10px 5px 10px 5px;
+}
+</code></pre>
+<ul>
+<li>Selector de clase o <em>class</em> =&gt; Utiliza el atributo class dentro de una etiqueta html, como por ejemplo <code>&lt;h1 class="mi-titulo"&gt;¡Hola Mundo!&lt;/h1&gt;</code>:</li>
+</ul>
+<pre><code class="language-css">.mi-titulo {
+    color: red;
+    font-size: 34px;
+    margin: 10px 5px 10px 5px;
+}
+</code></pre>
+<h2 id="propiedades-css-mas-usadas">Propiedades CSS más usadas</h2>
+<ul>
+<li>
+<p><strong>color</strong> =&gt; Establece el color del texto y sus valores pueden ir en nombre de color en inglés (red, blue, green, yellow, aquamarine...) o en hexadecimal #66ccff</p>
+</li>
+<li>
+<p><strong>font-size</strong> =&gt; Establece el tamaño del texto en píxeles (12px)</p>
+</li>
+<li><strong>margin</strong> =&gt; Define un espacio alrededor de un elemento de bloque representado en píxeles por 4 valores (arriba derecha abajo izquierda)</li>
+<li><strong>background-color</strong> =&gt; Pone un color de fondo, ya sea en inglés o en hexadecimal.</li>
+<li><strong>font-family</strong> =&gt; Define el tipo de letra que se va a utilizar (verdana, arial, helvetica, san-serif...)</li>
+<li><strong>border</strong> =&gt; Pintamos un borde alrededor del elemento diciéndole qué grosor en píxeles y de qué color lo queremos (en inglés o hexadecimal)</li>
+</ul>
+<blockquote>
+<p>Para más información acerca de las propiedades CSS más usadas podéis visitar <a href="https://www.eniun.com/resumen-tabla-propiedades-css-valores/" target="_blank">esta lista</a> con ejemplos de código.</p>
+</blockquote>
+<div style="display:block;page-break-before:always;"></div>
+
+<h1 id="actividades">Actividades</h1>
+<ol>
+<li>
+<p>Descárgate el archivo "plantilla.html" y crea una página web con el texto que tú quieras pero utilizando las 7 primeras etiquetas que hemos visto, es decir:</p>
+<p>h1~h6 (para títulos)
+p (para párrafos)
+b o strong (para texto en negrita)
+i (para texto en cursiva)
+u (para texto subrayado)
+a (para poner un enlace a otro sitio o página web)
+blockquote (para citar texto entre comillas)</p>
+</li>
+</ol>
+<blockquote>
+<p>Guarda este archivo como <strong>101plantillaHTML.html</strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Una vez creado el archivo <strong>101plantillaHTML.html</strong> agrégale estilo CSS utilizando las propiedades que hemos visto en los apuntes añadiendo el atributo <em>style</em> a los elementos que tú quieras pero usando, al menos 1 vez, todas estas propiedades de CSS:</p>
+<p>color (para cambiarle el color al texto)
+font-size (para cambiar el tamaño del texto)
+background-color (para cambiar el color de fondo a la etiqueta body)
+border (para añadir borde)</p>
+</li>
+</ol>
+<p>Un ejemplo sería</p>
+<pre><code class="language-html">&lt;p style=&quot;color: blue; border: solid 2px black&quot;&gt;Esto es un texto de color azul con un borde de 2 píxeles y de color negro&lt;/p&gt;
+</code></pre>
+<blockquote>
+<p>Guarda este archivo como <strong>102plantillaHTMLconCSS.html</strong></p>
+</blockquote>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
